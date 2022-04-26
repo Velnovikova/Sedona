@@ -1,0 +1,348 @@
+
+.filters-list{
+    background: url("../images/filter background.jpg") no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color:white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.filters ul{
+    list-style: none;
+}
+.index-column1, .index-column2{
+    width:25%;
+    text-align: start;
+}
+.infarastracture-list, .housing-list{
+  padding:0;
+}
+legend{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left:-10px;
+}
+
+fieldset{
+    border: none;
+}
+.filter-option{
+  margin-bottom: 20px;
+}
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-left:20px;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0px;
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../images/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../images/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-range {
+    width:50%;
+  }
+  .content-range{
+      margin-left:200px;
+    
+  }
+  
+  .filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: start;
+  }
+  
+  .price-controls {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .price-controls label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+  
+    cursor: pointer;
+  }
+  
+  .price-controls{
+    display: flex;
+    justify-content:center;
+  }
+  .price-controls .max-price{
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .price-controls .min-price{
+    margin-left: 50px;
+  }
+  .price-controls input {
+    width: 50px;
+    margin: 0;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
+    border: none;
+  }
+  
+  .range-controls {
+    position: relative;
+    margin-bottom: 32px;
+  }
+  
+  .range-controls .scale {
+    height: 2px;
+  
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+  }
+  
+  .range-toggle {
+    position: absolute;
+    top: -9px;
+  
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  
+  .range-toggle:hover {
+    background: #1c4f80;
+  }
+  
+  .range-toggle-min {
+    left: 0;
+  }
+  
+  .range-toggle-max {
+    left: 80%;
+  }
+  
+  .btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+  
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+  
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
+  }
+  .sort{
+      display: flex;
+      align-items: center;
+      justify-content:start;
+      padding-left:6%;
+      padding-right:6%;
+  }
+  .sort h3{
+    margin-right: 40px;
+  }
+  .title-sort{
+    color:black;
+    font-size: 12px;
+    margin-right: 40px;
+    
+}
+  .sort-list{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+  }
+  .sort-item{
+    margin-right: 30px;
+  }
+  .sort-list a{
+    font-size: 12px;
+    font-weight:400;
+    color: rgba(0,0,0,0.3);
+    border-bottom: dotted 1px rgb(129,179,210);
+    
+  }
+  .sort-list a:hover{
+    color:#81b3d2;
+    opacity: 1;
+  }
+  .sort-list a:active{
+    color:black;
+    border-bottom: 0px;
+  }
+  .sort-list a:visited{
+    color:#81b3d2;
+    opacity: 1;
+  }
+  .pointers{
+    margin-left:auto;
+  }
+  .pointers svg path:hover{
+    fill:rgb(35,31,32);
+  }
+  .pointers svg path:active{
+    fill:#81b3d2;
+  }
+  
+  .hotels-list{
+      list-style: none;
+      padding:0;
+  }
+  .hotel-item{
+      display: flex;
+      justify-content:flex-start;
+      padding-left:6%;
+      padding-right: 6%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-top:1px solid  #e5e5e5;
+      /*border-width: 112%;*/ 
+  }
+  .hotel-item:nth-child(3){
+    border-bottom:1px solid  #e5e5e5;
+  }
+  .hotel-item .hotels-item-image{
+    max-height: 90px;
+
+  }
+  
+  .hotel-item .content{
+    /*border:1px solid green;*/
+    text-align: left;
+    padding:0;
+    margin-left: 30px;
+    align-self: center;
+    
+    
+  }
+
+  .content button{
+    font-size: 14px;
+    color:white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    margin:0;
+    padding: 7px 16px;
+  }
+  .content  h3{
+    margin:0;
+    padding:0;
+    margin-bottom: 3px;
+  }
+  .content h3:hover{
+    color:#a3c7de;
+  }
+  .content h3:active{
+    color:#b2b2b2;
+  }
+  .content p{
+    margin:0;
+    margin-bottom: 9px;
+    padding: 0;
+  }
+  .content .more{
+    background-color:#81b3d2;
+    margin-right: 5px;
+  }
+  .content .more:hover{
+    background-color: #669dc0;
+  }
+  .content .more:active{
+    background-color: #5495bd;
+    color:rgba(255,255,255,0.3);
+  }
+  .content .reserve{
+    background-color:#756357;
+  }
+  .content .reserve:hover{
+    background-color: #604e43;
+  }
+  .content .reserve:active{
+    background-color: #503d32;
+    color:rgba(255,255,255,0.3);
+  }
+  .rating{
+    align-self:center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .rating p{
+    background-color:#f1f1f1 ;
+    color:#666666;
+    padding:0px 15px;
+    margin:0;
+    margin-top:40px;
+  }
+  .stars{
+    margin-left:auto;
+  }
